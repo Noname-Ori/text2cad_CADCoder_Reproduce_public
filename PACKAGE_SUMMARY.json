@@ -1,0 +1,46 @@
+{
+  "package_name": "text2cad_random100_public_generation_evaluation_release",
+  "sample_count": 100,
+  "included": {
+    "prompts_csv": "data/prompts/prompts.csv",
+    "prompts_jsonl": "data/prompts/prompts.jsonl",
+    "prompt_json_dir": "data/prompts/json",
+    "deepcad_cad_json_dir": "data/reference_sequence_gt/sequence_files/deepcad_cad_json",
+    "deepcad_cad_vec_dir": "data/reference_sequence_gt/sequence_files/deepcad_cad_vec",
+    "text2cad_wrapper_code": "code/text2cad",
+    "cadcoder_baseline_runner": "code/cadcoder",
+    "evaluation_code": "evaluation_code"
+  },
+  "evaluation": {
+    "entrypoint": "evaluation_code/evaluate.py",
+    "default_output_dir": "evaluation_outputs/",
+    "reference_json_argument": "--reference-json",
+    "generated_stl_argument": "--generated-stl",
+    "reference_used_by_default_evaluation": "data/reference_sequence_gt/sequence_files/deepcad_cad_json",
+    "reference_policy": "Evaluation reconstructs sequence-GT meshes from packaged Text2CAD/DeepCAD JSON with upstream Text2CAD/CadSeqProc and compares one generated STL against one reference JSON.",
+    "generated_outputs_included": false
+  },
+  "external_requirements": {
+    "text2cad_baseline": {
+      "source_code": "https://github.com/SadilKhan/Text2CAD",
+      "dataset": "https://huggingface.co/datasets/SadilKhan/Text2CAD",
+      "notes": "Obtain the official Text2CAD checkpoint from the upstream project instructions. Evaluation also requires the upstream CadSeqProc module for sequence-to-geometry reconstruction."
+    },
+    "cadcoder_baseline": {
+      "complete_model": "https://huggingface.co/gudo7208/CAD-Coder",
+      "dataset_format_reference": "https://huggingface.co/datasets/gudo7208/CAD-Coder",
+      "notes": "The CAD-Coder dataset page was used only as a reference for input/prompt formatting. Packaged prompts.csv can be converted directly to the runner JSONL input."
+    }
+  },
+  "excluded": [
+    "Text2CAD checkpoint",
+    "official Text2CAD source tree",
+    "CAD-Coder model files",
+    "generated geometry outputs"
+  ],
+  "counts": {
+    "prompt_json": 100,
+    "deepcad_cad_json": 100,
+    "deepcad_cad_vec": 100
+  }
+}

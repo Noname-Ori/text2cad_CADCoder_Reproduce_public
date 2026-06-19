@@ -1,0 +1,9 @@
+{
+  "row_count": 100,
+  "reference_policy": "Only sequence-derived reference files are included. Evaluation reconstructs reference geometry from the packaged Text2CAD/DeepCAD token sequence JSON with upstream Text2CAD/CadSeqProc.",
+  "counts": {
+    "deepcad_cad_json": 100,
+    "deepcad_cad_vec": 100,
+    "prompt_json": 100
+  }
+}

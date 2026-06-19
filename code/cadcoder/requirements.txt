@@ -1,0 +1,16 @@
+accelerate
+cadquery
+numpy
+openpyxl
+pandas
+Pillow
+plyfile
+scipy
+safetensors
+sentencepiece
+tokenizers==0.20.3
+torch
+torchvision
+tqdm
+transformers==4.46.3
+trimesh

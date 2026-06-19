@@ -1,0 +1,31 @@
+{
+  "sample_count": 100,
+  "fields": [
+    "index",
+    "cad_id",
+    "uid",
+    "shard",
+    "abstract",
+    "description",
+    "beginner",
+    "intermediate",
+    "expert",
+    "keywords",
+    "all_level_data",
+    "nli_data",
+    "prompt_json"
+  ],
+  "prompt_levels": [
+    "abstract",
+    "description",
+    "beginner",
+    "intermediate",
+    "expert"
+  ],
+  "notes": "These files list the prompt text for the already selected 100-sample subset. No additional shuffling or random sampling is performed here.",
+  "files": {
+    "csv": "data/prompts/prompts.csv",
+    "jsonl": "data/prompts/prompts.jsonl",
+    "per_sample_json_dir": "data/prompts/json"
+  }
+}

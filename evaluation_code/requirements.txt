@@ -1,0 +1,10 @@
+# Python >=3.10
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+trimesh>=4.0,<5
+openpyxl>=3.1,<4
+rtree>=1.0,<2
+
+# Exact default reference reconstruction also requires the upstream Text2CAD
+# checkout on PYTHONPATH, provided with --text2cad-root or TEXT2CAD_ROOT.

@@ -1,0 +1,1 @@
+{"dataset":"example_set","sample_id":"001_rect_block","source_id":"rect_block","prompt_for_generation":"Create a rectangular block with length 50 mm, width 30 mm, and height 20 mm.","prompt_type":"synthetic_example","prompt_level":"description","notes":"Minimal synthetic example for testing the runner format."}

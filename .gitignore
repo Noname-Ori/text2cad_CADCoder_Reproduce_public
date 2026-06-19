@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Local generation/evaluation outputs
+runs/
+outputs/
+generated_models/
+evaluation_outputs/
+evaluation_outputs*/
+tmp_metrics*/
+tmp/
+temp/
+code/cadcoder/inference/
+code/cadcoder/data/text2cad_random_100_v1_1_*/
+
+# Model weights and caches
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+.hf_cache/
+manual_hf/
+checkpoints/
+code/cadcoder/weights/
+
+# Evaluation matrix outputs
+*.npy
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

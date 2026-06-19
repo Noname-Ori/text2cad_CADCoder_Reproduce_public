@@ -1,0 +1,61 @@
+Text2CAD Random-100 Public Generation Package License Notice
+
+This repository contains two kinds of material with different licensing
+considerations.
+
+1. Data
+
+The files under data/ include Text2CAD-derived prompts and CAD token sequences.
+These materials should be used
+under the upstream Text2CAD dataset license terms where applicable.
+
+At the time this package was prepared, the Text2CAD Hugging Face dataset page
+listed the dataset license as Creative Commons Attribution-NonCommercial-
+ShareAlike 4.0 International (CC BY-NC-SA 4.0):
+
+https://huggingface.co/datasets/SadilKhan/Text2CAD
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Users must verify the upstream Text2CAD license and access conditions from
+their own download source before redistribution or use.
+
+2. Code
+
+The lightweight wrapper, runner, and evaluation scripts under code/ and
+evaluation_code/ are provided for research reproducibility. Unless a file
+explicitly states otherwise, these package-specific scripts may be used,
+modified, and redistributed under the MIT License:
+
+Copyright (c) 2026 The Authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the package-specific software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+3. External Models and Projects
+
+This repository does not redistribute the Text2CAD checkpoint, official
+Text2CAD source code, CAD-Coder model files, or local regenerated run
+directories.
+
+At the time this package was prepared, the CAD-Coder Hugging Face model page
+listed the model license as Apache-2.0:
+
+https://huggingface.co/gudo7208/CAD-Coder
+
+Users should obtain external code and model files directly from the upstream
+projects and follow their respective license terms.
